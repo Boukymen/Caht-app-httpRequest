@@ -1,1 +1,11 @@
-'{}'
+{
+    "name": "chat-app/bouky",
+    "description": "an app to chat together",
+    "authors": [
+        {
+            "name": "KONATE Bakary",
+            "email": "b0konate@enib.fr"
+        }
+    ],
+    "require": {}
+}
