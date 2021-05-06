@@ -7,7 +7,9 @@
 //   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
 //   PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 // ]);
-$db = new PDO('postgres:host=ec2-184-73-198-174.compute-1.amazonaws.com;dbname=ddun2ea9jq3a65;charset=utf8', 'vvrymcpcbkueqg', 'b72405910fef69e190e38d0c12935cd57609d39283cc26ea6e68c74bfaaae57e', [
+
+// pgloader mysql://root:123456@localhost/chat postgres://fgttaxfxeiosfv:58edee3c0af296b8557fcc23231c716c78a85ee3617a9c67daa6c08f7259d5cd@ec2-18-215-111-67.compute-1.amazonaws.com:5432/d6diof315iuqt5
+$db = new PDO('postgres:host=ec2-18-215-111-67.compute-1.amazonaws.com;dbname=d6diof315iuqt5;charset=utf8', 'fgttaxfxeiosfv', '58edee3c0af296b8557fcc23231c716c78a85ee3617a9c67daa6c08f7259d5cd', [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
   PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ]);
