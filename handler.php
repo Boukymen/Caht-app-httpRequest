@@ -9,7 +9,7 @@
 // ]);
 
 // pgloader mysql://root:123456@localhost/chat postgres://fgttaxfxeiosfv:58edee3c0af296b8557fcc23231c716c78a85ee3617a9c67daa6c08f7259d5cd@ec2-18-215-111-67.compute-1.amazonaws.com:5432/d6diof315iuqt5
-$db = new PDO('pgsql:host=ec2-18-215-111-67.compute-1.amazonaws.com;dbname=d6diof315iuqt5;charset=utf8', 'fgttaxfxeiosfv', '58edee3c0af296b8557fcc23231c716c78a85ee3617a9c67daa6c08f7259d5cd', [
+$db = new PDO('pgsql:host=ec2-18-215-111-67.compute-1.amazonaws.com;sslmode=require;dbname=d6diof315iuqt5;charset=utf8', 'fgttaxfxeiosfv', '58edee3c0af296b8557fcc23231c716c78a85ee3617a9c67daa6c08f7259d5cd', [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
   PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ]);
