@@ -31,7 +31,7 @@ function getMessages(){
   }
 
   // 3. On envoie la requête
-  requeteAjax.send();
+  // requeteAjax.send();
 }
 
 /**
@@ -62,7 +62,7 @@ function postMessage(event){
     getMessages();
   }
 
-  requeteAjax.send(data);
+  // requeteAjax.send(data);
 }
 
 //   document.querySelector('form').addEventListener("keyup", function(event) {
