@@ -3,9 +3,13 @@
 /**
  * Connexion simple à la base de données via PDO !
  */
-$db = new PDO('mysql:host=localhost;dbname=chat;charset=utf8', 'root', '123456', [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+// $db = new PDO('mysql:host=localhost;dbname=chat;charset=utf8', 'root', '123456', [
+//   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+//   PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+// ]);
+$db = new PDO('postgres:host=ec2-184-73-198-174.compute-1.amazonaws.com;dbname=ddun2ea9jq3a65;charset=utf8', 'vvrymcpcbkueqg', 'b72405910fef69e190e38d0c12935cd57609d39283cc26ea6e68c74bfaaae57e', [
+  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ]);
 
 /**
