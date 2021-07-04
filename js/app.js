@@ -12,17 +12,17 @@ function getMessages(){
   requeteAjax.open("GET", "handler.php");
 
   // 2. Quand elle reçoit les données, il faut qu'elle les traite (en exploitant le JSON) et il faut qu'elle affiche ces données au format HTML
-  requeteAjax.onload = function(){
-    const resultat = JSON.parse(requeteAjax.responseText);
-    const html = resultat.reverse().map(function(message){
-      return `
-        <div class="message">
-          <span class="date">${message.created_at.substring(11, 16)}</span>
-          <span class="author">${message.author}</span> : 
-          <span class="content">${message.content}</span>
-        </div>
-      `
-    }).join('');
+//   requeteAjax.onload = function(){
+//     const resultat = JSON.parse(requeteAjax.responseText);
+//     const html = resultat.reverse().map(function(message){
+//       return `
+//         <div class="message">
+//           <span class="date">${message.created_at.substring(11, 16)}</span>
+//           <span class="author">${message.author}</span> : 
+//           <span class="content">${message.content}</span>
+//         </div>
+//       `
+//     }).join('');
 
     const messages = document.querySelector('.messages');
 
@@ -31,7 +31,7 @@ function getMessages(){
   }
 
   // 3. On envoie la requête
-  requeteAjax.send();
+//   requeteAjax.send();
 }
 
 /**
@@ -62,7 +62,7 @@ function postMessage(event){
     getMessages();
   }
 
-  requeteAjax.send(data);
+//   requeteAjax.send(data);
 }
 
 //   document.querySelector('form').addEventListener("keyup", function(event) {
